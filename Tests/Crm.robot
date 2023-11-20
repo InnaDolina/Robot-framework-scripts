@@ -17,7 +17,7 @@ Should be able to add a new customer
     # resize browser window
     set window size         width=1935      height=1098
     set window position     x=-20   y=10
-    sleep                   3s
+    sleep                   2s
     close browser
 
 *** Keywords ***

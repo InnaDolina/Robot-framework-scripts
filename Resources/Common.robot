@@ -1,11 +1,13 @@
 *** Settings ***
 Library             SeleniumLibrary
-Resource            C:/Projects/Robot/Robot practice/Tests/Crm.robot
+Resource            ../Tests/CRM.robot
 
 *** Keywords ***
-Begin Web test
-    open browser    about:blank     ${BROWSER}
+Begin Web Test
+    set selenium timeout    10s
+    open browser            about:blank     ${BROWSER}
+    maximize browser window
 
-End Web test
+End Web Test
     close browser
 
